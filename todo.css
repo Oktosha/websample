@@ -1,0 +1,134 @@
+html {
+    background-image: url(https://download.unsplash.com/photo-1422433555807-2559a27433bd);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+body {
+   height: 100%; 
+}
+
+.table-layout {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    display: table-row;
+}
+
+footer {
+    height: 1px;
+}
+
+.todolist {
+    padding: 20px 5%;
+    position: relative;
+}
+
+.todolist ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.todolist li {
+    padding: 7px;
+    margin: 3px;
+    box-shadow: 0 0 5px 0 gray;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    height: 25px;
+    font-size: 16px;
+    font-family: Tahoma;
+    line-height: 24px;
+}
+
+.todolist li input[type="checkbox"] {
+    line-height: 24px;
+    font-size: 20px;
+    display: inline;
+    vertical-align: baseline;
+}
+
+.todolist ul p,
+.todolist ul form {
+    display: inline;
+}
+.todolist .change-current {
+    position: absolute;
+    right: 0;
+    padding-right: 5px;
+    display: none;
+}
+
+.todolist li:hover .change-current {
+    display: initial;
+}
+
+.todolist input[type="checkbox"]:checked ~ p {
+    text-decoration: line-through;
+    color: dimgrey;
+}
+
+.todolist .change-todo input[type="text"] {
+    width: 100%;
+    font-size: 16px;
+    font-family: Tahoma;
+}
+
+.todolist .change-todo form {
+    width: 100%;
+}
+
+.todolist .change-todo {
+   padding-right: 14px;
+}
+
+.todolist .change-todo input[type="submit"] {
+    display: none;
+}
+
+.todolist .add-todo {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 0px 2px 15px 4px;
+    padding: 7px;
+    box-shadow: 0 0 5px 0 white;
+    position: relative;
+    padding-right: 14px;
+}
+
+.todolist h1 {
+    color: white;
+    margin: 0;
+    padding: 5px 5px;
+    font-size: 20px;
+    font-family: Tahoma;
+    font-weight: normal;
+}
+
+.todolist .change-all {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    background-color: white;
+}
+
+.todolist .add-todo input[type="text"] {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: Tahoma;
+    height: 20px;
+}
+
+.todolist .add-todo input[type="submit"] {
+    display: none;
+}

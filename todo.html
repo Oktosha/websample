@@ -6,17 +6,17 @@
         <meta charset="utf-8">
     </head>
 <body>
-    <div class="todolist">
-        <header>
+    <div class="table-layout">
+        <div class="todolist">
             <h1>
-                Todos 
+                Enter your task here 
             </h1>
             <form class="change-all">
                 <label class="button mark">
                     <input type="submit" value="Mark all">
                 </label>
                 <label class="button clear">
-                    <input type="submit" value="Clear completed">
+                    <input type="submit" value="Clear complete">
                 </label>
             </form>
             <form class="add-todo">
@@ -26,49 +26,52 @@
                     <input type="submit" value="Add todo">
                 </label>
             </form>
-        </header>
-        <ul>
-            <li class="complete">
-                <input type="checkbox">
-                <p>buy eggs</p>
-                <form class="change-current">
-                    <label class="button edit">
-                        <input type="submit" value="Edit">
-                    </label>
-                    <label class="button delete">
-                        <input type="submit" value="Delete">
-                    </label>
-                </form>
-            </li>
-            <li>
-                <input type="checkbox">
-                <p>make omelette</p>
-                <form class="change-current">
-                    <label class="button edit">
-                        <input type="submit" value="Edit">
-                    </label>
-                    <label class="button delete">
-                        <input type="submit" value="Delete">
-                    </label>
-                </form>
-            </li>
-            <li class="change-todo"><form>
-                <input type="text" name="todo-3" size="40">
-                <input type="submit" value="Change!">
-            </form></li>
-            <li>
-                <input type="checkbox"> 
-                <p>conquire the world</p>
-                <form class="change-current">
-                    <label class="button edit">
-                        <input type="submit" value="Edit">
-                    </label>
-                    <label class="button delete">
-                        <input type="submit" value="Delete">
-                    </label>
-                </form>
-            </li>
-        </ul> 
+            <ul>
+                <li class="complete">
+                    <input type="checkbox">
+                    <p>buy eggs</p>
+                    <form class="change-current">
+                        <label class="button edit">
+                            <input type="submit" value="Edit">
+                        </label>
+                        <label class="button delete">
+                            <input type="submit" value="Delete">
+                        </label>
+                    </form>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <p>make omelette</p>
+                    <form class="change-current">
+                        <label class="button edit">
+                            <input type="submit" value="Edit">
+                        </label>
+                        <label class="button delete">
+                            <input type="submit" value="Delete">
+                        </label>
+                    </form>
+                </li>
+                <li class="change-todo"><form>
+                    <input type="text" name="todo-3" size="40">
+                    <input type="submit" value="Change!">
+                </form></li>
+                <li>
+                    <input type="checkbox"> 
+                    <p>conquire the world</p>
+                    <form class="change-current">
+                        <label class="button edit">
+                            <input type="submit" value="Edit">
+                        </label>
+                        <label class="button delete">
+                            <input type="submit" value="Delete">
+                        </label>
+                    </form>
+                </li>
+            </ul> 
+        </div>
+        <footer>
+            <p>This page was created by <a href="https://github.com/Oktosha">Oktosha</a> as a task for <a href="https://github.com/vpavlenko/web-programming">vpalenko's cource</a>.</p>
+        </footer>
     </div>
 </body>
 </html>
