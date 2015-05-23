@@ -37,7 +37,7 @@ footer {
 
 .todolist li {
     padding: 7px;
-    margin: 3px;
+    margin: 4px 0;
     box-shadow: 0 0 5px 0 gray;
     background-color: white;
     border-radius: 5px;
@@ -96,7 +96,7 @@ footer {
 .todolist .add-todo {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    margin: 0px 2px 15px 4px;
+    margin: 0 0 15px 1px;
     padding: 7px;
     box-shadow: 0 0 5px 0 white;
     position: relative;
@@ -114,9 +114,12 @@ footer {
 
 .todolist .change-all {
     position: absolute;
-    top: 0;
+    top: -10px;
+    padding: 10px 5px;
     right: 5%;
     background-color: white;
+    box-shadow: 0 0 5px 0 gray;
+    border-radius: 0 0 5px 5px;
 }
 
 .todolist .add-todo input[type="text"] {
