@@ -2,46 +2,79 @@
 <html>
     <head>
         <title>Todo</title>
+        <link rel="stylesheet" href="todo.css">
+        <meta charset="utf-8">
     </head>
 <body>
-    <h1>Simple Todo</h1>
+    
     <div class="todolist">
+        <h1>Simple Todo</h1>
         <form class="add-todo">
-            <input type="text" value="What needs to be done?" size="40">
+            <input type="text" name="todo" size="40" 
+                   value="What needs to be done?">
             <input type="submit" value="Add todo!">
         </form>
         <ul>
-            <li><form>
-                <label class="checkbox">
-                    <input type="checkbox">
-                </label>
-                <input type="text" size="40" value="buy eggs">
-                <input type="button" value="delete">
+            <li class="complete">
+                buy eggs
+                <form>
+                    <label class="complete-checkbox">
+                        <input type="submit" 
+                               value="mark as complete/uncomplete">
+                    </label>
+                    <label class="edit">
+                        <input type="submit" value="edit">
+                    </label>
+                    <label class="delete">
+                        <input type="submit" value="delete">
+                    </label>    
+                </form>
+            </li>
+            <li>
+                make omelette
+                <form>
+                    <label class="complete-checkbox">
+                        <input type="submit" 
+                               value="mark as complete/uncomplete">
+                    </label>
+                    <label class="edit">
+                        <input type="submit" value="edit">
+                    </label>
+                    <label class="delete">
+                        <input type="submit" value="delete">
+                    </label>    
+                </form>
+            </li>
+            <li class="change-todo"><form>
+                <input type="text" name="todo-3" size="40">
+                <input type="submit" value="Change!">
             </form></li>
-            <li><form>
-                <label class="checkbox">
-                    <input type="checkbox">
-                </label>
-                <input type="text" size="40" value="make omelette">
-                <input type="button" value="delete">
-            </form></li>
-            <li><form>
-                <label class="checkbox">
-                    <input type="checkbox">
-                </label>
-                <input type="text" size="40">
-                <input type="button" value="delete">
-            </form></li>
-            <li><form>
-                <label class="checkbox">
-                    <input type="checkbox">
-                </label>
-                <input type="text" size="40" value="conquire the world">
-                <input type="button" value="delete">
-            </form></li>
+            <li>
+                conquire the world
+                <form>
+                    <label class="complete-checkbox">
+                        <input type="submit" 
+                               value="mark as complete/uncomplete">
+                    </label>
+                    <label class="edit">
+                        <input type="submit" value="edit">
+                    </label>
+                    <label class="delete">
+                        <input type="submit" value="delete">
+                    </label>    
+                </form>
+            </li>
         </ul>
-        <button>mark all as complete</button>
-        <button>clear completed</button>
+        <form class="change-todos">
+            <label class="button">
+                mark all as comlete
+                <input type="submit" value="mark all as complete">
+            </label>
+            <label class="button">
+                clear complete
+                <input type="submit" value="clear completed">
+            </label>
+        </form>
     </div>
 </body>
 </html>
