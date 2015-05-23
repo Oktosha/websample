@@ -6,43 +6,50 @@
         <meta charset="utf-8">
     </head>
 <body>
-    
     <div class="todolist">
-        <h1>Simple Todo</h1>
-        <form class="add-todo">
-            <input type="text" name="todo" size="40" 
-                   value="What needs to be done?">
-            <input type="submit" value="Add todo!">
-        </form>
+        <header>
+            <h1>
+                Todos 
+            </h1>
+            <form class="change-all">
+                <label class="button mark">
+                    <input type="submit" value="Mark all">
+                </label>
+                <label class="button clear">
+                    <input type="submit" value="Clear completed">
+                </label>
+            </form>
+            <form class="add-todo">
+                <input type="text" name="todo" size="40" 
+                       value="call mummy">
+                <label class="button add">
+                    <input type="submit" value="Add todo">
+                </label>
+            </form>
+        </header>
         <ul>
             <li class="complete">
-                buy eggs
-                <form>
-                    <label class="complete-checkbox">
-                        <input type="submit" 
-                               value="mark as complete/uncomplete">
+                <input type="checkbox">
+                <p>buy eggs</p>
+                <form class="change-current">
+                    <label class="button edit">
+                        <input type="submit" value="Edit">
                     </label>
-                    <label class="edit">
-                        <input type="submit" value="edit">
+                    <label class="button delete">
+                        <input type="submit" value="Delete">
                     </label>
-                    <label class="delete">
-                        <input type="submit" value="delete">
-                    </label>    
                 </form>
             </li>
             <li>
-                make omelette
-                <form>
-                    <label class="complete-checkbox">
-                        <input type="submit" 
-                               value="mark as complete/uncomplete">
+                <input type="checkbox">
+                <p>make omelette</p>
+                <form class="change-current">
+                    <label class="button edit">
+                        <input type="submit" value="Edit">
                     </label>
-                    <label class="edit">
-                        <input type="submit" value="edit">
+                    <label class="button delete">
+                        <input type="submit" value="Delete">
                     </label>
-                    <label class="delete">
-                        <input type="submit" value="delete">
-                    </label>    
                 </form>
             </li>
             <li class="change-todo"><form>
@@ -50,31 +57,18 @@
                 <input type="submit" value="Change!">
             </form></li>
             <li>
-                conquire the world
-                <form>
-                    <label class="complete-checkbox">
-                        <input type="submit" 
-                               value="mark as complete/uncomplete">
+                <input type="checkbox"> 
+                <p>conquire the world</p>
+                <form class="change-current">
+                    <label class="button edit">
+                        <input type="submit" value="Edit">
                     </label>
-                    <label class="edit">
-                        <input type="submit" value="edit">
+                    <label class="button delete">
+                        <input type="submit" value="Delete">
                     </label>
-                    <label class="delete">
-                        <input type="submit" value="delete">
-                    </label>    
                 </form>
             </li>
-        </ul>
-        <form class="change-todos">
-            <label class="button">
-                mark all as comlete
-                <input type="submit" value="mark all as complete">
-            </label>
-            <label class="button">
-                clear complete
-                <input type="submit" value="clear completed">
-            </label>
-        </form>
+        </ul> 
     </div>
 </body>
 </html>
