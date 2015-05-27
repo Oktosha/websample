@@ -131,6 +131,9 @@ footer {
     font-family: Tahoma;
     height: 20px;
 }
+.todolist .add-todo input[type="text"]:focus {
+    outline: none;
+}
 
 .todolist .add-todo input[type="submit"] {
     display: none;
