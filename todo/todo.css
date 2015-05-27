@@ -35,14 +35,21 @@ footer {
     padding: 0;
 }
 
+.todolist p {
+    margin-left: 1px;
+}
+
 .todolist li {
-    padding: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 60px;
+    padding-left: 25px;
     margin: 4px 0;
     box-shadow: 0 0 5px 0 gray;
     background-color: white;
     border-radius: 5px;
     position: relative;
-    height: 25px;
+    min-height: 25px;
     font-size: 16px;
     font-family: Tahoma;
     line-height: 24px;
@@ -51,8 +58,9 @@ footer {
 .todolist li input[type="checkbox"] {
     line-height: 24px;
     font-size: 20px;
-    display: inline;
-    vertical-align: baseline;
+    position: absolute;
+    left: 0;
+    top: 9px;
 }
 
 .todolist ul p,
@@ -62,6 +70,7 @@ footer {
 .todolist .change-current {
     position: absolute;
     right: 0;
+    top: 5px;
     padding-right: 5px;
     display: none;
 }
