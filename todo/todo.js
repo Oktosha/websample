@@ -1,9 +1,9 @@
 var $; /* jQuery global variable */
 var console;
+var localStorage;
 
 $(document).ready(function () {
     'use strict';
-    
     var todos = [],
         i;
     
@@ -29,12 +29,22 @@ $(document).ready(function () {
         item.fadeOut('slow', function () {
             $(this).remove();
         });
-        
+        localStorage.setItem("todos", JSON.stringify(todos));
+    }
+    
+    
+    if ((localStorage !== undefined) && (localStorage.todos !== undefined)) {
+        todos = JSON.parse(localStorage.getItem("todos"));
+        for (i = 0; i < todos.length; i += 1) {
+            todos[i] = new Todo(todos[i].todo, todos[i].checked);
+        }
     }
     
     for (i = 0; i < todos.length; i += 1) {
         todos[i].addToDOM('append');
     }
+    
+    localStorage.setItem("todos", JSON.stringify(todos));
     
     $(document).on('click', 'input[value="Delete"]', function (event) {
         var cur_element = $(this).parents('li');
@@ -60,6 +70,7 @@ $(document).ready(function () {
     $('.add-todo').submit(function (event) {
         var item = new Todo($('.add-todo input').val(), '');
         todos.splice(0, 0, item);
+        localStorage.setItem("todos", JSON.stringify(todos));
         item.addToDOM('prepend');
         event.preventDefault();
         $('.add-todo input').val('');
@@ -74,7 +85,6 @@ $(document).ready(function () {
     });
     
     $(document).on('click', 'input[value="Clear complete"]', function () {
-        console.log('clear complete');
         $('input[type="checkbox"]:checked')
             .parents('li').each(function () {
                 deleteItem($(this));
